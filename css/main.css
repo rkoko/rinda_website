@@ -57,16 +57,28 @@
 	background-color: #00CFFF;
 }
 
-#about{
+#about, #projects{
 	min-height: 0;
 }
 
-#about .left-col{
+#about, #projects .left-col{
 	color: #949494;
 	padding: 20px;
 	text-align: left;
 	font-weight: 700;
 }
+
+#projects{
+	margin-top: -80px;
+}
+
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+		height: 600px;
+}
+
+
 
 .left-col p{
 	margin-top: 0;
@@ -74,9 +86,6 @@
 	font-size: 20px;
 }
 
-#about .right-col{
-	padding: 20px;
-}
 
 #gallery{
 	padding: 0px;
@@ -101,10 +110,25 @@
 	max-height: 380px;
 }
 
+
+
 #contact{
 	background-color: #EEFDF9;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	min-height: 400px;
+	background-size: cover;
+	padding-bottom: 50px;
+	padding-top: 50px;
+	color: #949494;
+	margin-top: -30px;
 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
+
 #contact p{
 	font-size: 24px;
 	margin-bottom: 40px;
@@ -137,7 +161,7 @@
 	margin-left: 10%;
 	margin-right: 10%;
 	padding-bottom: 150px;
-	
+
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -191,10 +215,7 @@
         width: 100%;
         max-width: 992px;
         max-height: 900px;
-  
+
     }
 
 }
-
-
-
