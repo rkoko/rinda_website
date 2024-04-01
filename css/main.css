@@ -1,12 +1,10 @@
 .hero{
 	font-family: 'Lato', sans-serif;
 	text-align: center;
-	min-height: 800px;
+	/*min-height: 800px;*/
 	background-size: cover;
-	padding-bottom: 50px;
+/*	padding-bottom: 50px;*/
 	color: #949494;
-
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -26,8 +24,11 @@
 }
 
 .landscape{
-	background-image: url("../img/gallery/blurredintro.jpg");
-	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../img/gallery/blurredintro.jpg") no-repeat center center fixed;
+    background-blend-mode: darken;
+    background-size: cover;
+    min-height:600px;
+
 }
 
 
@@ -39,6 +40,8 @@
 #intro h5{
 	margin-bottom: 20px;
 	font-size: 24px;
+	;
+
 }
 
 .cta{
@@ -68,12 +71,12 @@
 	font-weight: 700;
 }
 
-#projects{
+/*#projects{
 	margin-top: -80px;
 }
+*/
 
-
-.carousel-inner > .item > img {
+/*.carousel-inner > .item > img {
     margin: 0 auto;
 		height: 600px;
 }
@@ -88,12 +91,13 @@
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 20px;
-}
+}*/
 
 
 #gallery{
 	padding: 0px;
 	margin: 0px;
+
 }
 
 #gallery h2{
@@ -111,9 +115,12 @@
 .col-md-4 img{
 	height: 100%;
 	max-width: 390px;
-	max-height: 380px;
+	max-height: 100px;
+	width: 100px; /* or any size you prefer */
+  	height: 100px; /* should match the width for a square */
+  	object-fit: cover; /* this will make sure your images cover the area without stretching */
+/* 	 display: block; /* to remove any inline spacing */*/
 }
-
 
 
 #contact{
@@ -126,7 +133,6 @@
 	padding-top: 50px;
 	color: #949494;
 	margin-top: -30px;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -161,11 +167,10 @@
 }
 
 #footer{
-	min-height:40px;
+	height:auto;
 	margin-left: 10%;
 	margin-right: 10%;
-	padding-bottom: 150px;
-
+	/*padding-bottom: 150px;*/
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -216,10 +221,13 @@
     }
 
     .col-md-4 img {
-        width: 100%;
+        width: 25%;
+        height: auto;
         max-width: 992px;
         max-height: 900px;
 
     }
+}
+
 
 }
